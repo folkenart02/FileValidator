@@ -1,8 +1,16 @@
-# FileValidator V.5
+# FileValidator V.6
 
-FileValidator V.5 is a Python-based asset validation toolkit for Unreal workflows. It scans folders or Unreal content paths, applies configurable validation rules, and writes structured JSON reports for downstream review.
+FileValidator V.6 is a Python-based asset validation toolkit for Unreal project workflows. It scans directories or Unreal content paths, applies configurable validation rules, and writes structured JSON reports for review, QA, and pipeline automation.
 
-## How to run
+## What this project does
+
+- Validates files recursively from a real filesystem folder or an Unreal virtual content path.
+- Checks file size, extension rules, forbidden folders, naming conventions, and StaticMesh/material limits.
+- Works as a standalone Python tool and as an Unreal Editor script.
+- Produces a summary-first console report and writes JSON output by default.
+- Supports filtering by severity, category, custom config, and output location.
+
+## Quick start
 
 ### Standalone Python usage
 
@@ -14,143 +22,66 @@ python run_validator.py --directory "C:\Path\To\Assets"
 
 ### Unreal Editor usage
 
-From inside Unreal Editor, use **Tools** > **Execute Python Script** and select `run_ValidatorUnreal.py`. This will validate the project content folder under `/Game/Global` and write the report into the validator project folder.
+Inside Unreal Editor, use Tools > Execute Python Script and run `run_ValidatorUnreal.py`.
 
-### Example with report controls
+This script validates the default project content root at `/Game/Global` and writes the output into the validator project folder.
+
+### Example with filters and custom output
 
 ```bash
-python run_validator.py --directory "F:\Clases\ta_GavinThompson\Test" --severity error --show-passed --output "ValidationResults.json"
+python run_validator.py --directory "F:\Project\Content" --severity error --show-passed --output "ValidationResults.json"
 ```
 
-## What it does
+## Current CLI options
 
-- Validates files recursively from a filesystem directory or a content path.
-- Applies rule-based checks for file size, extension usage, forbidden folders, naming, and StaticMesh-specific limits.
-- Supports a clean standalone execution path with summary-first console reporting.
-- Writes a structured JSON report to `ValidationResults.json` by default.
-- Supports runtime filtering and output controls through a dedicated CLI interface and config defaults.
+```bash
+python run_validator.py --directory "C:\Path\To\Assets" [options]
+```
 
-## What is new in this version
+Available options:
 
-This version adds a more complete and organized execution flow:
-
-- A standalone launcher script: `run_validator.py`
-- A dedicated CLI entry module: `Validator/cli.py`
-- A cleaner separation between validation logic and command-line handling
-- Support for console filtering with `--severity`, `--category`, `--quiet`, `--verbose`, `--show-passed`, and `--output`
-- Example output files to show expected report structure: `ExampleValidationResults.json`
-- A minimal dependency note in `requirements.txt` for setup guidance
+- `--directory`, `-d`: target directory to validate
+- `--config`: optional JSON config file path
+- `--asset-type`: limit validation to `env` or `chr`
+- `--severity`: filter console output to `error`, `warning`, or `info`
+- `--category`: filter reporting to one rule category
+- `--quiet`: suppress console summary output
+- `--verbose`: enable more detailed console output
+- `--show-passed`: include passing checks in the console output
+- `--output`: override the JSON report output path
 
 ## Project structure
 
-- `run_validator.py` — standalone entry point for non-Unreal validation
-- `run_ValidatorUnreal.py` — Unreal Editor entry point for in-editor validation
-- `config.json` — default configuration file (customizable)
-- `requirements.txt` — dependency documentation
-- `README` — this file
-- `ExampleValidationResults.json` — sample output to show report structure
-- `Validator/` — core validation package
-  - `config.py` — configuration defaults and overrides
-  - `runner.py` — validation engine
-  - `cli.py` — CLI parser and execution flow
-  - `Rules/` — rule implementations
+- `run_validator.py` — standalone CLI entry point for filesystem validation
+- `run_ValidatorUnreal.py` — Unreal Editor entry point for virtual `/Game/...` validation
+- `config.json` — default configuration file you can edit or override
+- `requirements.txt` — minimal dependency notes for the project
+- `ExampleValidationResults.json` — sample JSON output
+- `README` — project documentation
+- `Validator/` — core package
+  - `cli.py` — command-line parsing and execution flow
+  - `config.py` — built-in defaults and overrides
+  - `runner.py` — validation pipeline and report generation
+  - `registry.py` — automatic rule discovery and registration
+  - `env.py` — Unreal environment detection helpers
   - `context/` — filesystem and Unreal context adapters
-
-## Standalone execution
-
-Run the validator from the project root with:
-
-```bash
-python run_validator.py --directory "C:\Path\To\Assets"
-```
-
-### Example with report controls
-
-```bash
-python run_validator.py --directory "F:\Clases\ta_GavinThompson\Test" --severity error --show-passed --output "ValidationResults.json"
-```
-
-### Available standalone CLI options
-
-- `--directory` / `-d`: target directory to validate
-- `--config`: optional JSON config file
-- `--asset-type`: limit validation to `chr` or `env`
-- `--severity`: filter output to `error`, `warning`, or `info`
-- `--category`: filter reporting to one rule category
-- `--quiet`: suppress console output
-- `--verbose`: enable more detailed reporting
-- `--show-passed`: include passing results in the console output
-- `--output`: override the JSON report path
-
-## Unreal Editor execution
-
-Run the Unreal entry script from inside Unreal Editor:
-
-```python
-run_ValidatorUnreal.py
-```
-
-This validates the project content folder under `/Game/Global` and writes the report into the validator project folder.
-
-## Reporting behavior
-
-The validator produces a summary-first report that is easier to review than the earlier raw output style.
-
-The console report includes:
-
-- total check count
-- passed count
-- failed count
-- severity breakdown
-- grouped failures by asset path
-- readable rule/category context for each failure
-
-This keeps the output focused on signal instead of flooding the console with raw results.
-
-## Output files
-
-By default, the validator writes a JSON file named `ValidationResults.json`.
-
-An example output file is also included in the project root as `ExampleValidationResults.json`.
-
-## Output structure
-
-Each entry in the JSON report contains:
-
-- `asset_path`
-- `category`
-- `rules`
-- `message`
-- `severity`
-- `passed`
-
-## Filtering and noise control
-
-To reduce unnecessary output noise:
-
-- use `--severity` to focus on a single severity level
-- use `--category` to restrict the reporting area
-- use `--show-passed` only when you want to see passing checks
-- use `--quiet` when you only want the run status and report file
-- use `--verbose` when you need a deeper explanation of the results
-
-## Configuration behavior
-
-Validation defaults come from the built-in configuration dictionary, with optional JSON overrides and environment-variable overrides.
-
-Runtime behavior such as output verbosity and output location is supported through the CLI and can be layered with config defaults.
+  - `Rules/` — validation rules
+    - `Filesystem.py` — file size and extension checks
+    - `Naming.py` — naming and filename length checks
+    - `material.py` — material texture size checks
+    - `staticmesh.py` — triangle count and material count checks
+    - `base.py` — rule interfaces and result types
 
 ## Configuration
 
-The validator uses a defaults dictionary as a fallback and then applies overrides from an optional JSON config file.
+The validator starts with built-in defaults from `Validator/config.py`, then applies:
 
-A default config file is included in the project as `config.json`. You can modify this file to customize validation rules, or pass a custom config path using the `--config` option:
+1. Optional JSON overrides from `--config`
+2. Environment variables that begin with `VALIDATOR_`
 
-```bash
-python run_validator.py --directory "C:\Path\To\Assets" --config "path/to/custom_config.json"
-```
+This allows you to tune thresholds and rule behavior without editing the code.
 
-### Example config:
+### Example config
 
 ```json
 {
@@ -184,67 +115,91 @@ python run_validator.py --directory "C:\Path\To\Assets" --config "path/to/custom
 }
 ```
 
-### Configuration options
+### Common config keys
 
-- `error_unkown_ext`: controls whether unknown extensions are raised as errors or warnings.
-- `blueprint_prefixes`: enables blueprint-specific extension checking.
-- `max_allowed_triangles.env` / `max_allowed_triangles.chr`: limit StaticMesh polygon counts per asset category.
-- `max_materials.env` / `max_materials.chr`: limit StaticMesh material slot counts per asset category.
-- `forbidden_folders`: reports assets that live under disallowed folder names.
-- `txt_size_limit`: maximum allowed texture size referenced by a material, in MB.
-- `material_skip_engine_materials`: whether engine materials are skipped from this validation.
-- `material_exempt_patterns`: normal-map naming patterns to ignore when evaluating material textures.
+- `env.Max_filesizeMB` / `chr.Max_filesizeMB`: max file size per asset family
+- `max_filename_length`: name length cap before failure
+- `naming_patterns`: regex used for naming validation
+- `env.prefixes` / `chr.prefixes`: allowed file extension mapping by prefix
+- `blueprint_prefixes`: blueprint naming and extension rules
+- `error_unkown_ext`: raise unknown extension as error or warning
+- `forbidden_folders`: folder names that should be rejected
+- `max_allowed_triangles.env` / `max_allowed_triangles.chr`: max triangle count for StaticMesh checks
+- `max_materials.env` / `max_materials.chr`: max material count for StaticMesh checks
+- `txt_size_limit`: max allowed texture size in MB for material validation
+- `material_skip_engine_materials`: ignore engine materials during material checks
+- `material_exempt_patterns`: ignore normal-map naming patterns
 
-### Customizing the config
+### Example custom config usage
 
-To customize validation behavior:
-
-1. Edit `config.json` in the project root, or
-2. Create a copy and pass it with `--config "path/to/your_config.json"`
-
-If no config is provided, the validator uses built-in defaults from `Validator/config.py`. Environment variables prefixed with `VALIDATOR_` override both file and built-in defaults.
-
-## Rules included
-
-The package currently discovers the following rules automatically:
-
-- `FileSize` — validates file size against env/chr thresholds.
-- `Extensions` — validates allowed extensions based on prefix rules.
-- `ForbiddenFolder` — flags assets under forbidden folders.
-- `Naming` — enforces naming pattern and max filename length.
-- `Polygon Count` — checks StaticMesh triangle count limits.
-- `Material Count` — checks StaticMesh material slot counts.
-- `Large texture in Material` — checks material texture references against a configurable size limit, with engine-material and normal-map exemptions.
-
-## Material texture rule
-
-The `Large texture in Material` rule inspects Unreal material assets and checks the textures they reference. It is designed to catch oversized texture references that can increase memory usage, build size, and shader cost.
-
-This rule supports:
-
-- `txt_size_limit`: maximum texture size in MB.
-- `material_skip_engine_materials`: skip engine materials from validation.
-- `material_exempt_patterns`: ignore textures by naming convention.
-
-If material dependency inspection fails, the rule returns a skipped result instead of generating noise.
-
-## Path handling
-
-The StaticMesh rules normalize Unreal-style paths before extracting asset names. This avoids issues with backslashes in paths such as:
-
-```text
-D:/Project/Content/Global\Blueprints\BP_Slider.uasset
+```bash
+python run_validator.py --directory "C:\Path\To\Assets" --config "path/to/custom_config.json"
 ```
 
-## Rule authoring
+## Rule set
 
-New rules can be added without editing the core runner:
+The rule registry auto-discovers rules from the `Validator/Rules/` package. The current default set includes:
 
-1. Create a new Python file under `Validator/Rules/`.
-2. Import `AbstractRule`, `Severity`, and `Validation` from `Validator/Rules/base.py`.
-3. Define a class that inherits from `AbstractRule`.
-4. Set `name`, `category`, and `severity`.
-5. Implement `validate(self, asset_path)` and return a `Validation` result.
-6. Decorate the class with `@registry.register`.
+- `FileSize` — checks file size against environment and character thresholds
+- `Extensions` — checks configured extension use by prefix rules
+- `ForbiddenFolder` — flags files under disallowed folders
+- `Naming` — validates the naming pattern and filename length
+- `Polygon Count` — checks StaticMesh triangle count limits
+- `Material Count` — checks StaticMesh material count limits
+- `Large texture in Material` — catches oversized referenced textures in materials
 
-The registry will discover the new rule automatically when the runner initializes.
+## Output behavior
+
+The validator generates a summary-first console report with:
+
+- total checks
+- pass/fail totals
+- severity breakdown
+- grouped failures by asset path
+- detailed rule/category messaging
+
+By default it writes a JSON report to `ValidationResults.json` in the working directory, or to the path supplied by `--output`.
+
+Each result entry contains:
+
+- `asset_path`
+- `category`
+- `rules`
+- `message`
+- `severity`
+- `passed`
+
+## Example report output
+
+```json
+[
+  {
+    "asset_path": "C:/Project/Content/Global/Env/EnvM_Test.uasset",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "File size 42.10 MB is within the 60 MB limit",
+    "severity": "Info",
+    "passed": true
+  }
+]
+```
+
+## Unreal-specific notes
+
+- The standalone path validates local folders on disk.
+- The Unreal entry script works with virtual asset paths and checks project assets under `/Game/...`.
+- StaticMesh and material rules are designed for Unreal asset metadata and dependency inspection when Unreal is available.
+- If Unreal is not available, those rules can skip cleanly instead of crashing the validation run.
+
+## Extending the validator
+
+New rules can be added without changing the core runner:
+
+1. Create a new Python file under `Validator/Rules/`
+2. Import `AbstractRule`, `Severity`, and `Validation` from `Validator/Rules/base.py`
+3. Define a class that inherits from `AbstractRule`
+4. Set `name`, `category`, and `severity`
+5. Implement `validate(self, asset_path)` and return a `Validation` result
+6. Decorate the class with `@registry.register`
+
+The registry automatically discovers and loads the new rule when validation starts.
