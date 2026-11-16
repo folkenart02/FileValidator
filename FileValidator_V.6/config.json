@@ -1,0 +1,29 @@
+{
+  "env.Max_filesizeMB": 60,
+  "chr.Max_filesizeMB": 100,
+  "max_filename_length": 70,
+  "naming_patterns": "^[A-Z][a-zA-Z0-9_]+$",
+  "env.prefixes": {
+    "EnvT_": [".png", ".tga", ".exr", ".jpg"],
+    "EnvM_": [".uasset", ".fbx", ".gltf", ".usd"],
+    "EnvMTL_": [".uasset"]
+  },
+  "chr.prefixes": {
+    "ChrT_": [".png", ".tga", ".exr", ".jpg"],
+    "ChrM_": [".uasset", ".fbx"],
+    "ChrMTL_": [".uasset"],
+    "SM_": [".uasset"]
+  },
+  "blueprint_prefixes": {
+    "BP_": [".uasset"]
+  },
+  "error_unkown_ext": true,
+  "forbidden_folders": ["temp"],
+  "max_allowed_triangles.env": 5000,
+  "max_allowed_triangles.chr": 10000,
+  "max_materials.chr": 4,
+  "max_materials.env": 3,
+  "txt_size_limit": 30,
+  "material_skip_engine_materials": true,
+  "material_exempt_patterns": ["*_N", "*_Normal", "*_normal", "*_nrm"]
+}

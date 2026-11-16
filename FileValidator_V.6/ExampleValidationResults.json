@@ -1,0 +1,786 @@
+[
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.fbx",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "File size 0.03 MB is within the 100 MB limit",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.fbx",
+    "category": "FileSystem",
+    "rules": "Extensions",
+    "message": "Extension .fbx is allowed",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.fbx",
+    "category": "FileSystem",
+    "rules": "ForbiddenFolder",
+    "message": "No forbidden folder found in asset path",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.fbx",
+    "category": "Naming",
+    "rules": "Naming",
+    "message": "Filename ChrM_Main_1.fbx size is within max filename length",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.fbx",
+    "category": "material",
+    "rules": "Large texture in Material",
+    "message": "[Skipped] Unreal Engine is not available",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.fbx",
+    "category": "StaticMesh",
+    "rules": "Polygon Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.fbx",
+    "category": "StaticMesh",
+    "rules": "Material Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.mtl",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "File size 0.00 MB is within the 100 MB limit",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.mtl",
+    "category": "FileSystem",
+    "rules": "Extensions",
+    "message": "Extension .mtl is not allowed for prefix ChrM_. Allowed: ['.uasset', '.fbx']",
+    "severity": "Error",
+    "passed": false
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.mtl",
+    "category": "FileSystem",
+    "rules": "ForbiddenFolder",
+    "message": "No forbidden folder found in asset path",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.mtl",
+    "category": "Naming",
+    "rules": "Naming",
+    "message": "Filename ChrM_Main_1.mtl size is within max filename length",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.mtl",
+    "category": "material",
+    "rules": "Large texture in Material",
+    "message": "[Skipped] Unreal Engine is not available",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.mtl",
+    "category": "StaticMesh",
+    "rules": "Polygon Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.mtl",
+    "category": "StaticMesh",
+    "rules": "Material Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.obj",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "File size 0.00 MB is within the 100 MB limit",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.obj",
+    "category": "FileSystem",
+    "rules": "Extensions",
+    "message": "Extension .obj is not allowed for prefix ChrM_. Allowed: ['.uasset', '.fbx']",
+    "severity": "Error",
+    "passed": false
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.obj",
+    "category": "FileSystem",
+    "rules": "ForbiddenFolder",
+    "message": "No forbidden folder found in asset path",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.obj",
+    "category": "Naming",
+    "rules": "Naming",
+    "message": "Filename ChrM_Main_1.obj size is within max filename length",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.obj",
+    "category": "material",
+    "rules": "Large texture in Material",
+    "message": "[Skipped] Unreal Engine is not available",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.obj",
+    "category": "StaticMesh",
+    "rules": "Polygon Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.obj",
+    "category": "StaticMesh",
+    "rules": "Material Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.usd",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "File size 0.00 MB is within the 100 MB limit",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.usd",
+    "category": "FileSystem",
+    "rules": "Extensions",
+    "message": "Extension .usd is not allowed for prefix ChrM_. Allowed: ['.uasset', '.fbx']",
+    "severity": "Error",
+    "passed": false
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.usd",
+    "category": "FileSystem",
+    "rules": "ForbiddenFolder",
+    "message": "No forbidden folder found in asset path",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.usd",
+    "category": "Naming",
+    "rules": "Naming",
+    "message": "Filename ChrM_Main_1.usd size is within max filename length",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.usd",
+    "category": "material",
+    "rules": "Large texture in Material",
+    "message": "[Skipped] Unreal Engine is not available",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.usd",
+    "category": "StaticMesh",
+    "rules": "Polygon Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_1.usd",
+    "category": "StaticMesh",
+    "rules": "Material Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_2.fbx",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "File size 0.03 MB is within the 100 MB limit",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_2.fbx",
+    "category": "FileSystem",
+    "rules": "Extensions",
+    "message": "Extension .fbx is allowed",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_2.fbx",
+    "category": "FileSystem",
+    "rules": "ForbiddenFolder",
+    "message": "No forbidden folder found in asset path",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_2.fbx",
+    "category": "Naming",
+    "rules": "Naming",
+    "message": "Filename ChrM_Main_2.fbx size is within max filename length",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_2.fbx",
+    "category": "material",
+    "rules": "Large texture in Material",
+    "message": "[Skipped] Unreal Engine is not available",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_2.fbx",
+    "category": "StaticMesh",
+    "rules": "Polygon Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_2.fbx",
+    "category": "StaticMesh",
+    "rules": "Material Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_3.fbx",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "File size 0.03 MB is within the 100 MB limit",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_3.fbx",
+    "category": "FileSystem",
+    "rules": "Extensions",
+    "message": "Extension .fbx is allowed",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_3.fbx",
+    "category": "FileSystem",
+    "rules": "ForbiddenFolder",
+    "message": "No forbidden folder found in asset path",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_3.fbx",
+    "category": "Naming",
+    "rules": "Naming",
+    "message": "Filename ChrM_Main_3.fbx size is within max filename length",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_3.fbx",
+    "category": "material",
+    "rules": "Large texture in Material",
+    "message": "[Skipped] Unreal Engine is not available",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_3.fbx",
+    "category": "StaticMesh",
+    "rules": "Polygon Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_3.fbx",
+    "category": "StaticMesh",
+    "rules": "Material Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_4.fbx",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "File size 0.03 MB is within the 100 MB limit",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_4.fbx",
+    "category": "FileSystem",
+    "rules": "Extensions",
+    "message": "Extension .fbx is allowed",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_4.fbx",
+    "category": "FileSystem",
+    "rules": "ForbiddenFolder",
+    "message": "No forbidden folder found in asset path",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_4.fbx",
+    "category": "Naming",
+    "rules": "Naming",
+    "message": "Filename ChrM_Main_4.fbx size is within max filename length",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_4.fbx",
+    "category": "material",
+    "rules": "Large texture in Material",
+    "message": "[Skipped] Unreal Engine is not available",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_4.fbx",
+    "category": "StaticMesh",
+    "rules": "Polygon Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_4.fbx",
+    "category": "StaticMesh",
+    "rules": "Material Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_5.fbx",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "File size 0.03 MB is within the 100 MB limit",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_5.fbx",
+    "category": "FileSystem",
+    "rules": "Extensions",
+    "message": "Extension .fbx is allowed",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_5.fbx",
+    "category": "FileSystem",
+    "rules": "ForbiddenFolder",
+    "message": "No forbidden folder found in asset path",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_5.fbx",
+    "category": "Naming",
+    "rules": "Naming",
+    "message": "Filename ChrM_Main_5.fbx size is within max filename length",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_5.fbx",
+    "category": "material",
+    "rules": "Large texture in Material",
+    "message": "[Skipped] Unreal Engine is not available",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_5.fbx",
+    "category": "StaticMesh",
+    "rules": "Polygon Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_5.fbx",
+    "category": "StaticMesh",
+    "rules": "Material Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_6.fbx",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "File size 0.03 MB is within the 100 MB limit",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_6.fbx",
+    "category": "FileSystem",
+    "rules": "Extensions",
+    "message": "Extension .fbx is allowed",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_6.fbx",
+    "category": "FileSystem",
+    "rules": "ForbiddenFolder",
+    "message": "No forbidden folder found in asset path",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_6.fbx",
+    "category": "Naming",
+    "rules": "Naming",
+    "message": "Filename ChrM_Main_6.fbx size is within max filename length",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_6.fbx",
+    "category": "material",
+    "rules": "Large texture in Material",
+    "message": "[Skipped] Unreal Engine is not available",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_6.fbx",
+    "category": "StaticMesh",
+    "rules": "Polygon Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_6.fbx",
+    "category": "StaticMesh",
+    "rules": "Material Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_7.fbx",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "File size 0.03 MB is within the 100 MB limit",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_7.fbx",
+    "category": "FileSystem",
+    "rules": "Extensions",
+    "message": "Extension .fbx is allowed",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_7.fbx",
+    "category": "FileSystem",
+    "rules": "ForbiddenFolder",
+    "message": "No forbidden folder found in asset path",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_7.fbx",
+    "category": "Naming",
+    "rules": "Naming",
+    "message": "Filename ChrM_Main_7.fbx size is within max filename length",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_7.fbx",
+    "category": "material",
+    "rules": "Large texture in Material",
+    "message": "[Skipped] Unreal Engine is not available",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_7.fbx",
+    "category": "StaticMesh",
+    "rules": "Polygon Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\ChrM_Main_7.fbx",
+    "category": "StaticMesh",
+    "rules": "Material Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_1.usd",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "File size 0.00 MB is within the 60 MB limit",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_1.usd",
+    "category": "FileSystem",
+    "rules": "Extensions",
+    "message": "Extension .usd is allowed",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_1.usd",
+    "category": "FileSystem",
+    "rules": "ForbiddenFolder",
+    "message": "No forbidden folder found in asset path",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_1.usd",
+    "category": "Naming",
+    "rules": "Naming",
+    "message": "Filename EnvM_Main_1.usd size is within max filename length",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_1.usd",
+    "category": "material",
+    "rules": "Large texture in Material",
+    "message": "[Skipped] Unreal Engine is not available",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_1.usd",
+    "category": "StaticMesh",
+    "rules": "Polygon Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_1.usd",
+    "category": "StaticMesh",
+    "rules": "Material Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_8.fbx",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "File size 0.03 MB is within the 60 MB limit",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_8.fbx",
+    "category": "FileSystem",
+    "rules": "Extensions",
+    "message": "Extension .fbx is allowed",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_8.fbx",
+    "category": "FileSystem",
+    "rules": "ForbiddenFolder",
+    "message": "No forbidden folder found in asset path",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_8.fbx",
+    "category": "Naming",
+    "rules": "Naming",
+    "message": "Filename EnvM_Main_8.fbx size is within max filename length",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_8.fbx",
+    "category": "material",
+    "rules": "Large texture in Material",
+    "message": "[Skipped] Unreal Engine is not available",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_8.fbx",
+    "category": "StaticMesh",
+    "rules": "Polygon Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_8.fbx",
+    "category": "StaticMesh",
+    "rules": "Material Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_9.fbx",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "File size is 144.96MB -- Exceeds the 60 MB limit",
+    "severity": "Error",
+    "passed": false
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_9.fbx",
+    "category": "FileSystem",
+    "rules": "Extensions",
+    "message": "Extension .fbx is allowed",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_9.fbx",
+    "category": "FileSystem",
+    "rules": "ForbiddenFolder",
+    "message": "No forbidden folder found in asset path",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_9.fbx",
+    "category": "Naming",
+    "rules": "Naming",
+    "message": "Filename EnvM_Main_9.fbx size is within max filename length",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_9.fbx",
+    "category": "material",
+    "rules": "Large texture in Material",
+    "message": "[Skipped] Unreal Engine is not available",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_9.fbx",
+    "category": "StaticMesh",
+    "rules": "Polygon Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\EnvM_Main_9.fbx",
+    "category": "StaticMesh",
+    "rules": "Material Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\textures\\color_121212.hdr",
+    "category": "FileSystem",
+    "rules": "FileSize",
+    "message": "[Skipped] File size validation skipped: prefix unrecognized for 'color_121212.hdr'",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\textures\\color_121212.hdr",
+    "category": "FileSystem",
+    "rules": "Extensions",
+    "message": "Extension .hdr is not allowed by any configured prefix rule; please revise filetype.",
+    "severity": "Error",
+    "passed": false
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\textures\\color_121212.hdr",
+    "category": "FileSystem",
+    "rules": "ForbiddenFolder",
+    "message": "No forbidden folder found in asset path",
+    "severity": "Info",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\textures\\color_121212.hdr",
+    "category": "Naming",
+    "rules": "Naming",
+    "message": "Stem color_121212 does not match naming ^[A-Z][a-zA-Z0-9_]+$. Expected PascalCase with optional underscores. Example: CHM_MainCharacter",
+    "severity": "Warning",
+    "passed": false
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\textures\\color_121212.hdr",
+    "category": "material",
+    "rules": "Large texture in Material",
+    "message": "[Skipped] Unreal Engine is not available",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\textures\\color_121212.hdr",
+    "category": "StaticMesh",
+    "rules": "Polygon Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  },
+  {
+    "asset_path": "F:\\Clases\\ta_GavinThompson\\Test\\textures\\color_121212.hdr",
+    "category": "StaticMesh",
+    "rules": "Material Count",
+    "message": "[Skipped] Unreal Engine is not available.",
+    "severity": "Warning",
+    "passed": true
+  }
+]

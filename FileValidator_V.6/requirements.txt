@@ -1,0 +1,9 @@
+# Minimal dependency file for FileValidator.
+# For standalone usage, run:
+#   python run_validator.py --directory "C:\Path\To\Assets"
+#
+# For Unreal Editor usage, run the script from inside Unreal Editor:
+#   run_ValidatorUnreal.py
+#
+# This project uses only the Python standard library plus Unreal Engine APIs
+# when executed inside the editor.
